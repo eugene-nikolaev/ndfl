@@ -1,0 +1,2 @@
+export const SELECT_INPUT = 'SELECT_INPUT'
+export const BUTTON_PRESSED = 'BUTTON_PRESSED'
