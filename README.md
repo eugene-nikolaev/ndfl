@@ -3,6 +3,9 @@ React + redux app for counting Russian Tax (НДФЛ)
 
 ### Usage
 
+Install node,js (depends on your OS)
+https://nodejs.org/
+
 ```
 npm install
 npm start
