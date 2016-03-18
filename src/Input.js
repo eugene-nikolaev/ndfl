@@ -4,12 +4,18 @@ import { selectInput } from './actions/factories'
 
 class Input extends React.Component {
   render() {
-    return <div className={this.props.className}
-                onClick={() =>{
-                    this.props.dispatch(selectInput(this.props.name))
-                }}>
-                {this.props.value}
-           </div>;
+    return (
+      <div className={this.props.className}
+          onClick={() =>{
+              this.props.dispatch(selectInput(this.props.name))
+          }}>
+        <span className="centerContainer">
+          <span>
+            {this.props.value}
+          </span>
+        </span>
+      </div>
+    )
   }
 }
 

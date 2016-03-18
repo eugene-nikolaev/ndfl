@@ -4,14 +4,17 @@ import { buttonPressed } from './actions/factories'
 
 class Button extends React.Component {
   render() {
-    return <input className="taxButton"
-                  style={this.style}
-                  type="button"
-                  value={this.props.caption}
-                  onClick={() =>{
-                    this.props.dispatch(buttonPressed(this.props.caption))
-                  }}
-            />;
+    return (
+      <td onClick={() =>{
+          this.props.dispatch(buttonPressed(this.props.caption))
+        }}>
+        <span className="centerContainer">
+          <div className="taxButton">
+            {this.props.caption}
+          </div>
+        </span>
+      </td>
+    )
   }
 }
 
