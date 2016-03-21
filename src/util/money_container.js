@@ -19,7 +19,6 @@ export default class MoneyContainer {
         this.hasPoint = true
       }
     } else {
-      console.log(parseInt(this.whole))
       if ((parseInt(this.whole) >= 100000) && !this.hasPoint) {
         return this
       }

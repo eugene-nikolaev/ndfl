@@ -43,7 +43,6 @@ const mapStateToProps = (state, ownProps) => {
   }
   let value = ownMap.value.toString()
   value = formatAsMoney(value)
-  console.log(value)
   return {
     name: ownProps.name,
     className: className,

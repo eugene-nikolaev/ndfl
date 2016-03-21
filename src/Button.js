@@ -5,7 +5,7 @@ import { buttonPressed } from './actions/factories'
 class Button extends React.Component {
   render() {
     return (
-      <td onClick={() =>{
+      <td onTouchStart={() =>{
           this.props.dispatch(buttonPressed(this.props.caption))
         }}>
         <span className="centerContainer">
