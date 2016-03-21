@@ -5,16 +5,16 @@ import { selectInput } from './actions/factories'
 class Input extends React.Component {
   render() {
     return (
-      <div className={this.props.className}
+      <td className={this.props.className}
           onClick={() =>{
               this.props.dispatch(selectInput(this.props.name))
           }}>
         <span className="centerContainer">
-          <span>
+          <div className="taxInput unselectable">
             {this.props.value}
-          </span>
+          </div>
         </span>
-      </div>
+      </td>
     )
   }
 }
@@ -37,7 +37,7 @@ const formatAsMoney = (str) => {
 
 const mapStateToProps = (state, ownProps) => {
   let ownMap = state[ownProps.name]
-  let className = "taxInput"
+  let className = ""
   if (ownProps.name === state.selectedInput) {
     className += " selected"
   }

@@ -20,7 +20,7 @@ export default class MoneyContainer {
       }
     } else {
       console.log(parseInt(this.whole))
-      if ((parseInt(this.whole) >= 9999999) && !this.hasPoint) {
+      if ((parseInt(this.whole) >= 100000) && !this.hasPoint) {
         return this
       }
       if (this.hasPoint) {

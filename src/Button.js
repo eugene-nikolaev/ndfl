@@ -9,7 +9,7 @@ class Button extends React.Component {
           this.props.dispatch(buttonPressed(this.props.caption))
         }}>
         <span className="centerContainer">
-          <div className="taxButton">
+          <div className="taxButton unselectable">
             {this.props.caption}
           </div>
         </span>
